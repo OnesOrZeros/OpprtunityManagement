@@ -31,6 +31,7 @@
 			}
 
 			$data['title'] = 'Create Opportunity';
+			$data['accounts'] = $this->account_model->get_accounts();
 
 			$this->form_validation->set_rules('name', 'Name', 'required');
 			$this->form_validation->set_rules('stage', 'Stage', 'required');

@@ -21,8 +21,8 @@ class Opportunity_model extends CI_Model{
 			'name' => $this->input->post('name'),
 			'stage' => $this->input->post('stage'),
 			'amount' => $this->input->post('amount'),
-			'userid' => $this->input->post('userid'),
-			'accountid' => $this->input->post('accountid')
+			'userid' => $this->session->userdata('user_id'),
+			'accountid' => $this->input->post('AccountID')
 		);
 
 		return $this->db->insert('opportunities', $data);

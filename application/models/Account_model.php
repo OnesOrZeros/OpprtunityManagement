@@ -19,11 +19,12 @@ class Account_model extends CI_Model{
 		$name = url_title($this->input->post('name'));
 
 		$data = array(
+			'userid' => $this->session->userdata('user_id'),
 			'name' => $this->input->post('name'),
 			'address' => $this->input->post('address'),
 			'mobile' => $this->input->post('mobile'),
-			'email' => $this->input->post('email'),
-			'userid' => $this->input->post('userid')
+			'email' => $this->input->post('email')
+			
 		);
 
 		return $this->db->insert('accounts', $data);

@@ -44,13 +44,12 @@
 				// Log In user
 				$user_id = $this->user_model->login($username, $password);
 
-				print_r($user_id);
-
+			
 				if($user_id){
 					// Create session
 					$user_data = array(
-						'userid' => $userid,
-						'username' => $username,
+						'user_id' => $user_id,
+						'username' => $Username,
 						'logged_in' => true
 					);
 

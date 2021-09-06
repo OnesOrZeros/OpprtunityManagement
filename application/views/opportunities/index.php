@@ -17,7 +17,7 @@
       <td><?php echo $opportunity['Amount']; ?></td>
 
       <td>
-        <a href="opportunities/edit/<?php echo $opportunity['OpportunityID'];?>" class="btn btn-info">Edit</a>
+        <a href="opportunities/edit/<?php echo $opportunity['OpportunityID'];?>" class="btn btn-info"><i class="fas fa-pen"></i></a>
 
       <a href="opportunities/delete/<?php echo $opportunity['OpportunityID'];?>" class="btn btn-danger" onclick="return confirm('Are you sure  to Delete?')"><i class="fas fa-trash"></i></a>
         </td>

@@ -17,7 +17,7 @@
       <td><?php echo $account['Email']; ?></td>
 
       <td>
-        <a href="accounts/edit/<?php echo $account['Name'];?>" class="btn btn-info">Edit</a>
+        <a href="accounts/edit/<?php echo $account['Name'];?>" class="btn btn-info"><i class="fas fa-pen"></i></a>
 
       <a href="accounts/delete/<?php echo $account['AccountID'];?>" class="btn btn-danger" onclick="return confirm('Are you sure  to Delete?')"><i class="fas fa-trash"></i></a>
         </td>
